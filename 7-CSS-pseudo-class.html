@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="CSS pseudo class">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo class</title>
+    <style>
+        p:hover{
+            background-color: brown;
+        }
+
+        a:active{
+            color: brown;
+        }
+        a:visited{
+            color: rgb(95, 158, 83);
+        }   
+        /* all p tags but not the class second */
+        p:not(.second){
+            color: aqua;
+        }
+       /* the number 1 of the all p tags */
+        /* p:nth-child(1){
+            background-color: antiquewhite;
+        } */
+        /* the pairs - also use "even" */
+        /* p:nth-child(2n){
+            background-color: antiquewhite;
+        } */
+        /* the impairs - also use "odd" */
+        /* p:nth-child(2n+1){
+            background-color: antiquewhite;
+        } */
+        /* starts from item 2 and continues in steps of 1 unit  */
+        /* p:nth-child(n+2){
+            background-color: antiquewhite;
+        } */
+        /* starts from item 2 and continues in steps of 2 units  */
+        /* p:nth-child(2n+2){
+            background-color: antiquewhite;
+        } */
+        /* first 3 items only */
+        /* p:nth-child(-n+3){
+            background-color: antiquewhite;
+        } */
+        /* range between third and sixth items only */
+        /* p:nth-child(n+3):nth-child(-n+6){
+            background-color: antiquewhite;
+        } */
+        /* In steps of 3*/
+        /* p:nth-child(3n){
+            background-color: antiquewhite;
+        } */
+        /* the last 3 items this is the counterpart of nth-child() */
+        p:nth-last-child(-n+3){
+            background-color: antiquewhite;
+        }
+        
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div>
+        <p>first</p>
+        <p class="second">second</p>
+        <p>third</p>
+        <p>four</p>
+        <p>five</p>
+        <p>six</p>
+        <p>seven</p>
+    </div>
+    <a href="https://translate.google.com/?hl=es&sl=en&tl=es&text=it%20would%20be%20easy%20to%20dismiss%20him%20as%20all%20brawn%20and%20no%20brain%0A&op=translate">This is a link</a>
+    
+
+
+</body>
+</html>
