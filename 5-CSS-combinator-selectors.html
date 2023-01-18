@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Combinator selectors">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator selectors</title>
+    <style>
+        /* CSS rule */
+        /* Descendant combinator */
+        .group1 p{
+            color: green;
+        }
+        /* CSS rule */
+        /* Child combinator */
+        .group2 > p{
+            color: red;
+        }
+        /* CSS rule */
+        /* General sibling combinator */
+        .group3 ~ p{
+            color: blueviolet;
+        }
+        /* CSS rule */
+        /* Adjacent sibling combinator */
+        .group4 + p{
+            color: aqua;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="group1">
+        <h2>Group1</h2>
+        </h2>
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+        <div>
+            <p>Four</p>
+        </div>
+    </div>
+    <div class="group2">
+        <h2>Group2</h2>
+        <p>First</p>
+        <p>Second</p>
+        <p>Third</p>
+        <div>
+            <p>Four</p>
+        </div>
+    </div>
+    <div>
+        <h2>Group3</h2>
+        <p>First</p>
+        <div class="group3">
+            <p>Second</p>
+            <p>Third</p>
+            <div>
+                <p>Four</p>
+            </div>
+        </div>
+        <p>Five</p>
+        <p>Six</p>
+        <p>Seven</p>
+    </div>
+    <div>
+        <h2>Group4</h2>
+        <p>First</p>
+        <div class="group4">
+            <p>Second</p>
+            <p>Third</p>
+            <div>
+                <p>Four</p>
+            </div>
+        </div>
+        <p>Five</p>
+        <p>Six</p>
+        <p>Seven</p>
+    </div>
+
+</body>
+</html>
