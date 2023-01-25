@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS positioning</title>
+    <style>
+        .container{
+            width: 200px;
+            height: 200px;
+            background-color: blanchedalmond;
+         }
+
+        .item{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: palevioletred;
+            text-align: center;
+           
+        }
+        
+        
+        .container .item:nth-child(1){
+            position: relative;
+            left: 4px;
+            top: 4px;
+            background-color: brown;
+
+            
+        }
+        
+        .container .item:nth-child(2){
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: rgb(166, 182, 110);
+        }
+        .container .item:nth-child(3){
+            position: sticky;
+            left: 0px;
+            top: 0px;
+            background-color: rgb(119, 119, 199);
+        }
+        .container .item:nth-child(4){
+            position: fixed;
+
+            background-color: blue;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>
