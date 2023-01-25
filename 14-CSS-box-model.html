@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The box model</title>
+    <style>
+        /* the margin collapsing is present with the display set to block */
+        div{
+            width: 200px;
+            height: 200px;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box;
+            background-color: rgb(146, 70, 70);
+            
+        }
+        div + div{
+            background-color: rgb(174, 105, 105);
+
+        }
+    </style>
+</head>
+<body>
+    <div>Platzi</div>
+    <div>Platzi</div>
+</body>
+</html>
