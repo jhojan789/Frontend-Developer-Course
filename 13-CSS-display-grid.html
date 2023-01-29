@@ -7,45 +7,72 @@
     <title>Document</title>
     <style>
         *{
-            margin: 0;
-            padding: 0;
             box-sizing: border-box;
         }
-
         .grid-container{
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-color: bisque;
+            border: 1px solid black;
             display: grid;
-            width: 80%;
-            height: 500px;
-            margin: 40px auto;
-            grid-template: 
-                "a a a" 40px
-                "c c c" 40px
-                "b c c" 40px;
-            grid-template-columns: repeat(3, 20px);
-                
-            gap: 20px 10px ;   
+            grid-template: repeat(4, 100px)/repeat(4, 100px);
+            /* justify-items: center; */
+            place-items: center end;
             
         }
-        .a{
-            background-color: aquamarine;
-            grid-area: a;
-        }
-        .b{
-            background-color: rgb(158, 189, 103);
-            grid-area: b;
-        }
-        .c{
-            background-color: rgb(202, 126, 111);
-            grid-area: c;
+
+        .grid-container > .cell{
+            border: 1 solid black;
+            
+            width: 100%;
+            border: 2px solid black;
+            
         }
 
-     </style>
+        .grid-container .item{
+            width: fit-content;
+            height: 30px;
+            padding: 1px;
+            background-color: brown;
+            
+        }
+
+        .grid-container  .item:nth-child(6){
+            font-size: large;
+            line-height: 40px;
+        }
+        .grid-container  .item:nth-child(n+5):nth-child(-n+8){
+            /* justify-self: center;
+            align-self: center; */
+            /* place-self: end ; */
+        }
+
+
+    </style>
 </head>
 <body>
-    <div class="grid-container">
-        <div class="a">one</div>
-        <div class="b">two</div>
-        <div class="c">three</div>
+
+    <div class="frame">
+        <div class="grid-container">
+            <div class="item">one</div>
+            <div class="item">two</div>
+            <div class="item">three</div>
+            <div class="item">four</div>
+            <div class="item">five</div>
+            <div class="item">six</div>
+            <div class="item">seven</div>
+            <div class="item">eight</div>
+            <div class="item">nine</div>
+            <div class="item">ten</div>
+            <div class="item">eleven</div>
+            <div class="item">twelve</div>
+            <div class="item">thirteen</div>
+            <div class="item">fourteen</div>
+            <div class="item">fifteen</div>
+            <div class="item">sixteen</div>
+    </div>
+        
     </div>
 </body>
 </html>
