@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS most-used properties</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section{
+            margin-top: 40px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            
+            
+        }
+        .card{
+            width: 500px;
+            height: 600px;
+            background-color: #F7DC6F;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .card figure:nth-of-type(1) img{
+            width: 100%;
+            
+           
+        }
+
+        .card .profile-img{
+            position: relative;
+            padding: 10px;
+            top: -45px;
+            width: 90px;
+            height: 90px;
+            background-color: #1F618D;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-image: url("https://images.pexels.com/photos/1351948/pexels-photo-1351948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 5px solid white ;
+           
+            
+            
+           
+            
+
+        }
+
+        .card .personal-info{
+            position: relative;
+            top: -40px;
+            text-align: center;
+
+        }
+
+        .card .personal-info :nth-child(1) {
+            color: #2C3E50; 
+        }
+        .card .personal-info :nth-child(2) {
+            color: #1F618D;
+        }
+        .card .personal-info :nth-child(3) {
+            color: #162732 ;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="card">
+            <figure>
+                <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="New york city image">
+                
+            </figure>
+            <div class="profile-img"></div>
+
+            <div class="personal-info">
+                <h2>Jhojan Tobón</h2>
+                <p>Full Stack Developer</p>
+                <p>HTML, CSS  and JavaScript</p>
+
+            </div>
+        </div>
+
+        
+    </section>
+</body>
+</html>
